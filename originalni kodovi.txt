@@ -1,0 +1,530 @@
+info.html - za sliku pozivinice
+<div class="info-item">
+			<a href="img/pozivnica.png" download>
+				<img src="img/pozivnica.png" alt="Image 1">
+			</a>
+			<p>Pozivnica</p>
+		</div>
+
+tim.html - originalni ceo kod
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Sajt</title>
+		<link rel="stylesheet" type="text/css" href="tim.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, inital scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+			<div class="navbar">
+				<div class="container">
+					<img id="mobile-cta" class="mobile-menu" src="img/bar-solid.svg">
+					<nav>
+						<img id="mobile-exit" class="mobile-menu-exit" src="img/x-solid.svg">
+						<ul class="primary-nav">
+							<li><a href="gallery/index.html">Gallery</a></li>
+							<li><a href="Kontakt/kontakt.html">Contact</a></li>
+							<li><a href="info/info.html">Travel Info</a></li>
+							<li><a href="#">Workers</a></li>
+							 </ul>
+        </nav>
+            </div>
+                </div>
+
+<div class="naslov">
+<img src="img/logo-girls-trip.png" alt="Logo" class="naslov-img naslov-img-left">
+<h1>GIRLS TRIP - WEEKEND GETAWAY</h1>
+<img src="img/logo-girls-trip.png" alt="Logo" class="naslov-img naslov-img-right">
+</div>
+
+<div class="tekst2">
+<h1>Girls just wanna have fun!</h1>
+</div>
+			
+			<p class="text">Vaše odabrane organizatorke:<br>
+				</p>
+			<div class="card-container">
+				
+				<div class="card">
+					<div class="top">
+					</div>
+					<div class="middle">
+						<img class="a-osoba" src="img/niki.png">
+						<div class="sekcija"> 
+							<p class="ime"><strong>Nikolina Stanić</strong></p>
+							<div class="mini-sekcija">
+								<div class="lopte">
+									<a href="https://www.instagram.com/_stanicc/"><img class="lopta" src="img/instagram.svg"></a>
+								</div>
+								<div class="lopte">
+									<a href="https://www.viber.com/en/"><img class="lopta" src="img/viber.svg"></a>
+								</div>
+								<div class="lopte">
+									<a href="https://web.telegram.org/a/"><img class="lopta" src="img/telegram.svg"></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="bottom">
+						<button>
+							Pozovi
+						</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="top">
+					</div>
+					<div class="middle">
+						<img class="a-osoba" src="img/ja.png">
+						<div class="sekcija"> 
+							<p class="ime"><strong>Anastasija Božić</strong></p>
+							<div class="mini-sekcija">
+								<div class="lopte">
+									<a href="https://www.instagram.com/anastasijabozicc/"><img class="lopta" src="img/instagram.svg"></a>
+								</div>
+								<div class="lopte">
+								<a href="https://www.viber.com/en/"><img class="lopta" src="img/viber.svg"></a>
+								</div>
+								<div class="lopte">
+									<a href="https://web.telegram.org/a/"><img class="lopta" src="img/telegram.svg"></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="bottom">
+						<button>
+							Pozovi
+						</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="top">
+					</div>
+					<div class="middle">
+						<img class="a-osoba" src="img/aleks2.png">
+						<div class="sekcija"> 
+							<p class="ime"><strong>Aleksandra Stanimirović</strong></p>
+							<div class="mini-sekcija">
+								<div class="lopte">
+									<a href="https://www.instagram.com/st__aleksandra/"><img class="lopta" src="img/instagram.svg"></a>
+								</div>
+								<div class="lopte">
+									<a href="https://www.viber.com/en/"><img class="lopta" src="img/viber.svg"></a>
+								</div>
+								<div class="lopte">
+									<a href="https://web.telegram.org/a/"><img class="lopta" src="img/telegram.svg"></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="bottom">
+						<button>
+							Pozovi
+						</button>
+					</div>
+				</div>
+			</div>
+		<script type="text/javascript">
+			const mobileBtn = document.getElementById('mobile-cta')
+				  nav = document.querySelector('nav')
+				  mobileBtnExit = document.getElementById('mobile-exit');
+			mobileBtn.addEventListener('click',()=>{
+					nav.classList.add('menu-btn');
+			})
+			mobileBtnExit.addEventListener('click',()=>{
+					nav.classList.remove('menu-btn');
+			})
+		</script>
+	</body>
+</html>
+
+
+kontakt.css - .top klasa
+.top {
+    background-color: rgb(255, 0, 144);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 30px;
+    color: rgb(248, 243, 246);
+}
+
+bez poravnanja
+.tekst3 {
+    background-color: rgb(255, 0, 144);
+    color: #20272E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 10px;
+    max-width: 800px; /* Povećavamo maksimalnu širinu na 600px za bolje prilagođavanje teksta */
+    margin: 20px auto; /* Centriramo tekst horizontalno i dodajemo margin od 20px između .tekst2 i .tekst3 */
+    padding: 20px; /* Povećavamo padding za bolji vizuelni izgled */
+    border-radius: 10px;
+    font-style: italic;
+    text-align: center; /* Centriramo tekst horizontalno */
+}
+
+sa poravnanjem 
+.tekst3 {
+    background-color: rgb(255, 0, 144);
+    color: #20272E;
+    margin-top: 40px;
+    font-size: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-style: italic;
+    text-align: justify; /* Poravnanje teksta sa obe strane */
+}
+
+.tekst3 h1 {
+    margin: 0; /* Uklanjamo margin od <h1> elementa */
+}
+
+
+
+pocetna - originalni ceo
+body {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    background-color: #ffa9dd;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar
+{
+	background: rgb(255, 0, 144);
+	padding: 1em;
+	height: 40px;
+}
+
+.primary-nav {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}  
+
+.primary-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.3em;
+    text-align: center;
+    transition: font-weight 0.2s;
+}
+
+.primary-nav a:hover {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: -5px;
+}
+
+.mobile-menu {
+    cursor: pointer; 
+    width: 25px;
+    height: 25px;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 1em;
+    background: #20272E;
+}
+
+ul.primary-nav {
+    margin-top: 5em;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.mobile-menu-exit {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+.primary-nav {
+    list-style: none;
+    position: relative;
+    left: -140px;
+}
+
+.naslov {
+    background-color: rgb(255, 0, 144);
+    color: #20272E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.naslov-img {
+    width: 100px; /* Prilagodite veličinu slike */
+    height: 100px; /* Prilagodite veličinu slike */
+}
+
+.naslov-img-left {
+    margin-right: 10px; /* Razmak između slike i teksta */
+}
+
+.naslov-img-right {
+    margin-left: 10px; /* Razmak između teksta i slike */
+}
+
+.tekst2 {
+    background-color: rgb(255, 0, 144);
+    color: #20272E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-top: 40px;
+    font-size: 15px;
+	max-width: 450px; /* Postavljamo maksimalnu širinu na 450px */
+    margin-left: auto; /* Pomeramo na sredinu */
+    margin-right: auto; /* Pomeramo na sredinu */
+    padding: 0 20px; /* Dodajemo padding da ne bude nalepljeno uz ivice */
+    border-radius: 10px; /* Dodajemo zaobljenje ivica */
+	font-style: italic; /* Postavljamo da tekst bude italic */
+}
+
+
+.tekst3 {
+    background-color: rgb(255, 0, 144);
+    color: #20272E;
+    display: flex;
+    flex-direction: column; /* Postavljamo da flex kontejner bude kolona */
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 13px; /* Povećavamo veličinu fonta za bolju čitljivost */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.tekst3 h1 {
+    margin-bottom: 0px; /* Dodajemo margin ispod h1 elementa */
+}
+
+.tekst3 p {
+    font-size: 20px; /* Postavljamo veličinu fonta za paragraf */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .top {
+    height: 60px;
+    width: 400px;
+    background-color: rgb(255, 0, 144);
+}
+
+.card .middle {
+    height: 250px;
+    width: 400px;
+    background-color: #20272E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.a-osoba {
+    height: 250px; /* Primer visine .a-osoba elementa */
+    width: 200px; /* Primer širine .a-osoba elementa */
+    background-color: lightcoral; /* Primer boje pozadine .a-osoba elementa */
+    position: relative;
+    bottom: 0; /* Uklanjanje efekta bottom za centriranje */
+    display: flex;
+    justify-content: center; /* Centralizuje sadržaj unutar .a-osoba */
+    align-items: center; /* Centralizuje sadržaj unutar .a-osoba */
+}
+
+/* .a-osoba {
+    height: 250px;
+    position: relative;
+    bottom: 50px;
+    width: 200px;
+} */
+
+.card .bottom {
+    height: 100px;
+    width: 400px;
+    background-color: rgb(255, 0, 144);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 13px #000000;
+}
+
+button {
+    background-color: #20272E;
+    padding: 18px;
+    color: #ffa9dd;
+    font-weight: bold;
+    font-size: 23px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    padding-left: 60px;
+    padding-right: 60px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #323232;
+    transform: scale(1.1);
+}
+
+.lopta {
+    width: 43px;
+    height: 43px;
+}
+
+.lopta:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.sekcija {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
+    color: #ffa9dd;
+}
+
+.mini-sekcija {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    bottom: 28px;
+}
+
+.ime {
+    font-size: 30px;
+    position: relative;
+    bottom: 0px;
+}
+
+@media only screen and (min-width: 949px) {
+    .card-container {
+        margin-left: 20px; 
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;    
+        align-items: center;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul.primary-nav {
+        margin: 0;
+    }
+
+    ul.primary-nav a {
+        color: #ffa9dd;
+        font-size: 1.3em;
+        padding: 1em;
+    }
+}
